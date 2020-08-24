@@ -36,7 +36,7 @@ args = my_parser.parse_args()
 # using now() to get current time
 # Update 't' variable to ne
 def notifi(name_stock, price):
-    ICON_PATH = "/home/vivek/Desktop/trading/zerodha_icon.png"
+    ICON_PATH = "icon.png"#icon path
     notify2.init("Stock Notifier")
     n = notify2.Notification(name_stock, price, icon=ICON_PATH)
     # set urgency level
