@@ -101,6 +101,6 @@ if __name__ == "__main__":
     lock = threading.Lock()
     for i in range(len(df.index)):
 
-        i = mlp(df.iloc[i]["equity"], df.iloc[i]["target_price_buy"],df.iloc[i]["target_price_sell"],lock)  # the function run in background . if we use daemon =True , then main thread continues executed and finsed. The sub node finshes after that . The .join() uses to halt the main  thread until sub tthread finishes
+        i = mlp(df.iloc[i]["equity"], df.iloc[i]["target_price_buy"],df.iloc[i]["target_price_sell"],lock) 
         i.start()
       
